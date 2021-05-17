@@ -9,7 +9,7 @@ Exemplos de chamadas na api no end-point ```/translate/```:
 
 Request: 
   - setence: A frase que irá ser mandada para api de tradução.
-  - lang: O código da lingua que vai ser traduzida a frase. Você pode encontrar os códigos referentes a cada lingua clicando no [link](https://www.onehourtranslation.com/translation/developers/language-codes)
+  - lang: O código da lingua que vai ser traduzida a frase. Você pode encontrar os códigos referentes a cada lingua clicando no [link](https://www.onehourtranslation.com/translation/developers/language-codes).
   
 ```JSON
 {
