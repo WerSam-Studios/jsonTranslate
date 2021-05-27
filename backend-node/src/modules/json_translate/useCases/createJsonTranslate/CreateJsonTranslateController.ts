@@ -7,7 +7,6 @@ class CreateJsonTranslateController {
 
     async handle(request: Request, response: Response): Promise<Response> {
         const {json_request} = request.body;
-        console.log(request.body)
         
         let {session} = request.headers;
         
@@ -16,7 +15,6 @@ class CreateJsonTranslateController {
 
         try {
             const json_translate = await this.createJsonTranslateUseCase.execute({json_request, session});
-            console.log(json_translate)
             return response.status(201).json(json_translate);
         }catch(err){
             return response.status(400).json({error: err})

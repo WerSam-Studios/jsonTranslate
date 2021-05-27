@@ -52,7 +52,7 @@ class JsonRepository  implements IJsonsTranstaleRepository{
 
     findBySession(session: string) : (JsonTranslate | undefined)[] | undefined {
 
-        const jsons = this.jsonsTranslate.map((json)=>{
+        const jsons = this.jsonsTranslate.filter((json)=>{
                 if(json.session == session)
                     return json;
             }
@@ -78,7 +78,7 @@ class JsonRepository  implements IJsonsTranstaleRepository{
             "setence": json_request,
             "lang" : "pt"
         }
-        let response = await axios.post("http://127.0.0.1:8000/translate",json_request_python).then((response) => { console.log( response.data); return JSON.stringify(response.data)}).catch((err)=> console.log('teste'))
+        let response = await axios.post("http://127.0.0.1:8000/translate",json_request_python).then((response) => {  return JSON.stringify(response.data)}).catch((err)=> console.log('teste'))
         
         if(!response)
             response = ''

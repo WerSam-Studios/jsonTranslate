@@ -10,7 +10,6 @@ jsonRoutes.get('/all',(request, response) => {
 })
 
 jsonRoutes.post('/',(request,response) =>{
-    console.log(request.body)
     createJsonTranslateController.handle(request,response);
 })
 
