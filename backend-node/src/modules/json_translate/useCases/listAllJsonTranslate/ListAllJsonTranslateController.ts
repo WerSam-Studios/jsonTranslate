@@ -14,7 +14,7 @@ class ListAllJsonTranslateController {
         try {
             const json_translate = this.listAllJsonTranslateUseCase.execute({session});
             if(json_translate)
-                return response.status(200).json(json_translate);
+                return response.header("Access-Control-Allow-Origin", "*").status(200).json(json_translate);
             else return response.status(404).send();
         }catch(err){
             return response.status(400).json({error: err})
