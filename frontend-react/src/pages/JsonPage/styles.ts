@@ -1,6 +1,23 @@
 import styled from 'styled-components';
 
-export const JsonViwer =styled.p`
+export const JsonViwer =styled.div`
+width: 400px;
+height: 500px;
+border: none;
+resize: none;
+font-size: 15px;
+color: Gray;
+padding: 5px;
+box-shadow: 5px 5px  #cecece;
+background-color: white;
+overflow:auto;
+border-radius: 15px;
+&::-webkit-scrollbar{
+    border-radius: 15px ;
+}
+`;
+
+export const JsonViwerPre =styled.pre`
 width: 400px;
 height: 500px;
 border: none;
@@ -30,7 +47,9 @@ export const JsonEditor =styled.textarea`
     padding: 5px;
     box-shadow: 5px 5px #cecece;
     border-radius: 15px;
-    
+    &::-webkit-scrollbar{
+        border-radius: 15px ;
+    }
 `;
 
 export const Button = styled.button`
