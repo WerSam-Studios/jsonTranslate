@@ -51,3 +51,33 @@ Para rodar a api do python é necessario que pela linha de comando você vá ate
 ```
 
 *Ele por padrão roda na porta 8000 caso seu computador já esteja rodando algo nesta porta, você tem que mudar a referência a seu localhost na API do NodeJs em* [/jsonTranslate/api_python_translate/]
+
+### FRONTEND - REACT
+
+O react foi a nossa escolha de framework frontend, pela sua alta versatilidade e desempenho, além de ser um dos framework javascript mais usado no mundo.
+
+## Transformando o projeto reactjs em TypeScript
+#npm
+```bash
+  npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+#yarn
+```bash
+  yarn add typescript @types/node @types/react @types/react-dom @types/jest
+```
+
+### BACKEND - NODEJS
+
+Pelo fato de ter como base o javascript rodando ao lado do servidor, utilizamos o nodejs com express no backend, mas o também em TypeScript.
+
+## Transformando o projeto reactjs em TypeScript
+#npm
+```bash
+  npm install -g typescript
+```
+#yarn
+```bash
+  yarn install -g typescript
+```
+
+Utilizamos
